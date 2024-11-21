@@ -30,7 +30,7 @@ public class CuentaAhorros extends Cuenta {
 
     @Override
     public double consignar(double cantidad) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        if(isActiva())
     }
 
     @Override
