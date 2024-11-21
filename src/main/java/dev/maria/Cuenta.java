@@ -68,9 +68,9 @@ abstract  class Cuenta {
         this.comisionMensual = comisionMensual;
     }
 
-    public abstract double retirar(double cantidad);
-    public abstract double consignar(double cantidad);
-    public abstract double extractoMensual();
+    public abstract double retirar(double cantidad) throws Exception;
+    public abstract double consignar(double cantidad) throws Exception;
+    public abstract double extractoMensual() throws Exception;
     public abstract void imprimir();
 
    
