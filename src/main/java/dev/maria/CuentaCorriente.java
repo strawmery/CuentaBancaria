@@ -7,6 +7,14 @@ public class CuentaCorriente extends Cuenta {
         this.sobregiro = 0;
     }
 
+    public double getSobregiro() {
+        return sobregiro;
+    }
+
+    public void setSobregiro(double sobregiro) {
+        this.sobregiro = sobregiro;
+    }
+
     @Override
     public double retirar(double cantidad) throws Exception {
         if (cantidad <= 0) {
